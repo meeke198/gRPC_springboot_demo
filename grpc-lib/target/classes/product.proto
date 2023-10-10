@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.b4u.grpc.lib.product";
+option java_outer_classname = "ProductProto";
+
+import "google/protobuf/empty.proto";
+
+message CreateProductRequest {
+  string name = 1;
+  int32 price = 2;
+  int32 quantity = 3;
+  string description = 4;
+}
+
+message CreateProductResponse {
+  int32 productId = 1;
+}
+
+message GetProductRequest {
+  int32 productId = 1;
+}
+
+message ProductResponse {
+  int32 productId = 1;
+  string name = 2;
+  int32 price = 3;
+  int32 quantity = 4;
+  string description = 5;
+}
+
+message Products {
+  repeated ProductResponse product = 1;
+}
+
+
+service ProductService {
+  rpc createProduct(CreateProductRequest) returns (CreateProductResponse);
+  rpc getProduct(GetProductRequest) returns (ProductResponse);
+  rpc getListProduct(google.protobuf.Empty) returns (Products);
+}

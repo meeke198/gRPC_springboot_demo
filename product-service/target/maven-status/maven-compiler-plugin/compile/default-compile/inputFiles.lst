@@ -1,0 +1,5 @@
+/Users/hienthu/Documents/microservice/gRPC_Microservices/product-service/src/main/java/com/b4u/grpc/product/ProductApplication.java
+/Users/hienthu/Documents/microservice/gRPC_Microservices/product-service/src/main/java/com/b4u/grpc/product/client/ProductClientTest.java
+/Users/hienthu/Documents/microservice/gRPC_Microservices/product-service/src/main/java/com/b4u/grpc/product/repository/ProductRepository.java
+/Users/hienthu/Documents/microservice/gRPC_Microservices/product-service/src/main/java/com/b4u/grpc/product/service/ProductService.java
+/Users/hienthu/Documents/microservice/gRPC_Microservices/product-service/src/main/java/com/b4u/grpc/product/domain/Product.java
